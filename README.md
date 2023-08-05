@@ -22,9 +22,13 @@
 
 - [font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
+- [font weights](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+
 - [how to use](https://css-tricks.com/snippets/css/using-font-face-in-css/)
 
 ### Responsive Design
+
+- [every layout](https://every-layout.dev/layouts/)
 
 - [fluid responsive design calculator](https://utopia.fyi/)
 
