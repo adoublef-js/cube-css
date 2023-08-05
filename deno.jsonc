@@ -1,20 +1,26 @@
 {
-    "tasks": {
-        "dev": "deno run --watch --allow-read --allow-env --allow-net"
-    },
-    "imports": {
-        "deps": "./deps/mod.ts",
-        "hono/jsx": "https://esm.sh/hono@3.3.4/jsx",
-        "hono/jsx/": "https://esm.sh/hono@3.3.4/jsx/"
-    },
-    "compilerOptions": {
-        "jsx": "react-jsx",
-        "jsxImportSource": "hono/jsx",
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "dom.asynciterable",
-            "deno.ns"
-        ]
-    }
+	"tasks": {
+		"dev": "deno run --watch --allow-read --allow-env --allow-net"
+	},
+	"imports": {
+		"deps": "./deps/mod.ts",
+		"hono/jsx": "https://esm.sh/hono@3.3.4/jsx",
+		"hono/jsx/": "https://esm.sh/hono@3.3.4/jsx/"
+	},
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"dom.asynciterable",
+			"deno.ns"
+		]
+	},
+	"fmt": {
+		"lineWidth": 80,
+		"useTabs": true,
+		"semiColons": true,
+		"indentWidth": 4
+	}
 }

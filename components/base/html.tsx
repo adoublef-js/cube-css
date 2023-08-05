@@ -1,4 +1,4 @@
-import { html, memo, Component } from "deps";
+import { Component, html, memo } from "deps";
 
 export type HtmlProps = {
     title?: string;
@@ -11,6 +11,14 @@ export type HtmlProps = {
 
 export const Html = memo(
     ({ lang = "en", title, children, scripts, styles }: HtmlProps) => {
+        const scriptHeaders = scripts?.map(
+            (src) => html`<script src="${src}"></script>`
+        );
+
+        const styleHeaders = styles?.map(
+            (href) => html`<link rel="stylesheet" href="${href}" />`
+        );
+
         return html`
             <!DOCTYPE html>
             <html>
@@ -24,12 +32,7 @@ export const Html = memo(
                         content="width=device-width, initial-scale=1.0"
                     />
                     <title>${title}</title>
-                    ${styles?.map(
-                        (href) => html`<link rel="stylesheet" href="${href}" />`
-                    )}
-                    ${scripts?.map(
-                        (src) => html`<script src="${src}"></script>`
-                    )}
+                    ${styleHeaders} ${scriptHeaders}
                 </head>
                 <body>
                     ${children}
