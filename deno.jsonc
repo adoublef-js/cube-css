@@ -1,6 +1,6 @@
 {
     "tasks": {
-        "dev": "deno run --watch"
+        "dev": "deno run --watch --allow-read --allow-env --allow-net"
     },
     "imports": {
         "deps": "./deps/mod.ts",

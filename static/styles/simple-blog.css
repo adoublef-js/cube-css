@@ -1,0 +1,20 @@
+:root {
+    /* TODO */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* TODO */
+    }
+}
+
+.wrapper {
+    /* ch based on reading line */
+    width: min(100% - 3rem, 55ch);
+    margin-inline: auto;
+}
+
+.flow>*+* {
+    /* space is now dynamic */
+    margin-top: var(--flow-space, 1em);
+}
