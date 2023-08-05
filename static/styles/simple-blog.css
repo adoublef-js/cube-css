@@ -1,5 +1,18 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "DM Serif";
+    src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf)
+        format(truetype);
+}
+
+/*  */
 :root {
-    /* TODO */
+    --font-text: "DM Sans", sans-serif;
+    --font-accent: "DM Serif", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -8,13 +21,29 @@
     }
 }
 
+body {
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-accent);
+    /* NOTE smaller line height for larger font sizes */
+    line-height: 1.1;
+    /* NOTE https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap */
+    text-wrap: balance;
+}
+
+/*  */
 .wrapper {
     /* ch based on reading line */
-    width: min(100% - 3rem, 55ch);
+    width: min(100% - 3rem, 65ch);
     margin-inline: auto;
 }
 
-.flow>*+* {
+.flow > * + * {
     /* space is now dynamic */
     margin-top: var(--flow-space, 1em);
 }

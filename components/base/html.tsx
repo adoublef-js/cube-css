@@ -40,21 +40,3 @@ export const Html = memo(
 );
 
 // htmx.org@1.9.4/dist/htmx.min.js
-
-/* 
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link
-                rel="preconnect"
-                href="https://fonts.gstatic.com"
-                crossorigin
-            />
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@300&display=swap"
-            />
-            <link rel="icon" href="/favicon.ico" sizes="32x32" />
-            <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-            <link rel="stylesheet" href="/reset.css" />
-            <link rel="stylesheet" href="/styles.css" />
-
-*/
