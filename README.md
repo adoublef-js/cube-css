@@ -22,11 +22,13 @@
 
 - [font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
+- [how to use](https://css-tricks.com/snippets/css/using-font-face-in-css/)
+
 ### Responsive Design
 
 - [fluid responsive design calculator](https://utopia.fyi/)
 
-### Videos
+### Tutorials
 
 - [nice styles with less css](https://www.youtube.com/watch?v=RctP49SwyT0&t=166s)
 

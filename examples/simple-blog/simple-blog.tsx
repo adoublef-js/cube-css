@@ -8,6 +8,7 @@ export function SimpleBlog() {
                     <h1>
                         Aut nostrum dolor non consectetur sunt et dicta atque.
                     </h1>
+                    {/* <!-- time | date | author --> */}
                     <p>
                         Lorem ipsum dolor sit amet. Est explicabo odit hic
                         libero quiaet quidem. Qui eaque explicabo eos
@@ -133,6 +134,13 @@ export function SimpleBlog() {
                         </a>{" "}
                         non vero minus sit facere dolores?
                     </p>
+                    <picture>
+                        <img
+                            class="aspect-wide"
+                            src="https://source.unsplash.com/a-balloon-shaped-like-a-flower-with-a-smiley-face-drawn-on-it-Z-srfKm1dEc"
+                            alt="a balloon shaped like a flower with a smiley face drawn on it"
+                        />
+                    </picture>
                     <blockquote cite="https://www.loremipzum.com">
                         Et eius pariatur non ratione cumque 33 autem dolores est
                         sapiente facilis in vitae perspiciatis.
@@ -287,7 +295,7 @@ export function SimpleBlog() {
                         molestiae Quis ab accusantium tempora quo doloribus
                         placeat.
                     </p>
-                </article>
+                </article>{" "}
             </main>
         </Html>
     );
